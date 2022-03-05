@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+body {
+}
+
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url(/html5/pattern_hexagon.png) ;
+  background-size: c;
+}
+
+aside {
+}
+main {
+}
+
+nav {
+  background-color: #007A78; 
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content:space-around;
+  align-items: center;
+  padding: 20px 0px;
+
+}
+
+#nav ul li {
+  padding: 7.5px 10px;
+}
+
+
+#nav ul li a {
+  text-decoration: none;
+  color: #FFC745;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  width: 400px;
+  padding: 10px 10px; /* gora - prawo - dol - lewo */
+  /* shorthands dla np. padding, margin */
+  /* margin: 10px - z kazdej strony element bedzie odsuniety o 10px (margin: 10px 10px 10px 10px) */
+  /* margin: 20px 10px -> 20px 10px 20px 10px */
+  /* margin: 20px 10px 15px -> 20px 10px 15px 10px */
+
+  /* calkowita szerokosc = width + padding + border 
+  box-sizing: content-box;*/
+
+  /* calkowita szerokosc = width 
+  box-sizing: border-box;*/
+  /* w przypadku border-box przegladarka oblicza dynamicznie max. szerokosc warstwy content, a nie calego elementu (content = width - padding - border) */
+}
+
+
+span.label {
+  display: inline-block;
+  width: 100px;
+  
+}
+
+form {
+  margin-left: 10px;
+}
+
+
+main h1 {
+  margin: 20px 20px;
+  font-weight: 700;
+  color: #004F4E;
+}
+
+main p {
+  margin: 20px 20px;
+  font-weight: 300;
+}
+
+p {
+  color: #007A78;
+  font-weight: 400;
+}
+
+
+form {
+ 
+}
+
+.required {
+  color: red;
+  font-weight: 700;
+}
+
+
+
+
+footer {
+  height: 50px;
+  background-color: #007A78;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: azure; padding-top: 18px;
+  margin-left: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #009E9B;
+
+}
+
+.bold {
+  font-weight: 500; /* font-weight: bold; */
+  font-size: 12px;
+}
+
+
+/* 
+    Zadanko - stylowanie strony
+    1. Dodajemy background color
+    2. Stylujemy H1 i pozostałe elementy tekstowe jak np. p
+    3. Stylujemy nawigację (ul li a)
+    4. Usuwamy ramki z label
+    5. Stosujemy display: flex z wlasciwym flex-direction w formularzu
+    6. Stosujemy font-weight i font-style na naszych labelkach
+    7. Wyrownanie inputow w pionie (span.label{})
+    8. Footer - centrowanie, przyklejenie (*) do dolnej cz. ekranu
+*/
